@@ -3,16 +3,13 @@ author = ""
 categories = ["cpp"]
 date = "2016-05-27T15:52:05+08:00"
 description = "宏的使用"
-featured = ""
-featuredalt = ""
-featuredpath = "date"
 linktitle = ""
 title = "将__LINE__宏格式化成字符串常量类型"
 type = "post"
 
 +++
 
-##使用宏的方式来格式化行号
+## 使用宏的方式来格式化行号
 
 我们已经知道，我们可以使用
 

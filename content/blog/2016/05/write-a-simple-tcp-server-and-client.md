@@ -9,9 +9,9 @@ type = "post"
 
 +++
 
-##用Go写一个简单的TCP server or client 模型
+## 用Go写一个简单的TCP server or client 模型
 
-###对Conn封装的基本思路
+### 对Conn封装的基本思路
 
 go内置了net包已经很好的封装了socket通讯。然而在实际使用中，由于net/Conn的Read/Write方法是堵塞的原因，必须将其放入单独的goroutine中进行处理。
 
@@ -376,9 +376,9 @@ go内置了net包已经很好的封装了socket通讯。然而在实际使用中
 
 我们只要在实现对应的方法，就可以接收事件和读取事件了。
 
-###Server/Client 端的实现
+### Server/Client 端的实现
 
-####Server
+#### Server
 
 我们已经封装好了Conn，那么接下来的工作将会简单很多。我们来封装一个TCPNetwork的结构。
 
@@ -442,7 +442,7 @@ go内置了net包已经很好的封装了socket通讯。然而在实际使用中
 
 其实基本的逻辑已经完成了，对于我们来说，只需要关心eventQueue里的内容就行了，这就属于上层逻辑处理了。这样一个简单的TCPNetwork就封装好了。
 
-####Client
+#### Client
 
 Client端基本没什么好说的，net包Connect成功后会获得一个Conn，然后对于这个Conn的处理其实和Server端一样了。
 
@@ -459,7 +459,7 @@ Client端基本没什么好说的，net包Connect成功后会获得一个Conn，
 		return nil
 	}
 
-####使用方法
+#### 使用方法
 
 对于外部来说，使用很简单，这里贴上一个简单的echo server example.
 
@@ -530,7 +530,7 @@ Client端基本没什么好说的，net包Connect成功后会获得一个Conn，
 
 
 
-###总结
+### 总结
 
 我们其实已经实现了一个简单的tcp封装了，支持server/client连接，至于其中心跳的细节、封包解包的细节等等，这里就不多介绍了，可以通过阅读源码来理解。
 
