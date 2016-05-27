@@ -1,6 +1,6 @@
 +++
 author = ""
-categories = ["c/c++"]
+categories = ["cpp"]
 date = "2016-05-10T19:57:15+08:00"
 description = "好大一个坑"
 featured = "pic02.jpg"
