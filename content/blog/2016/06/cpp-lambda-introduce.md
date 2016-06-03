@@ -1,6 +1,6 @@
 +++
 author = ""
-categories = []
+categories = ["cpp"]
 date = "2016-06-03T16:23:38+08:00"
 description = ""
 linktitle = ""
