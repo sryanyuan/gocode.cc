@@ -1,6 +1,6 @@
 +++
 author = ""
-categories = ["Go"]
+categories = ["go"]
 date = "2016-05-31T14:43:21+08:00"
 description = ""
 linktitle = ""
